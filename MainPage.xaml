@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App6.MainPage">
+
+    <StackLayout>
+
+
+
+        <Grid  Margin="10,0,10,0" BackgroundColor="#EFF1F5" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="15*" />
+                <RowDefinition Height="7*" />
+                <RowDefinition Height="50*" />
+                <RowDefinition Height="17*" />
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Row="0" Grid.Column="0" Margin="0,0,0,0" ColumnSpacing="25" RowSpacing="0"
+                  BackgroundColor="#EFF1F5" VerticalOptions="Fill" HorizontalOptions="Fill">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="70*" />
+                    <RowDefinition Height="30*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80*" />
+                    <ColumnDefinition Width="20*" />
+                </Grid.ColumnDefinitions>
+                <Label  Grid.Row="0" Grid.Column="0" Text="Company" HorizontalTextAlignment="Start" VerticalTextAlignment="End" BackgroundColor="Transparent"
+                                   FontSize="40" TextColor="#555555" 
+                        Margin="20,0,0,0" >
+                </Label>
+
+                <Label BackgroundColor="Transparent" Grid.Row="1" Grid.Column="0" Text="We are a company" 
+                       HorizontalTextAlignment="Start"   VerticalTextAlignment="Start"
+                         FontSize="12" TextColor="#555555" 
+                       Margin="57,0,0,0" >
+                </Label>
+
+
+                <ImageButton   Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" CornerRadius="5" Source="dash_language.png" VerticalOptions="Fill" 
+                              Margin="0,22,5,20" BackgroundColor="#EFF1F5" Aspect="AspectFit"  HorizontalOptions="Fill" />
+
+            </Grid>
+
+            <Label Grid.Row="1" Grid.Column="0" Text="Choose your power" VerticalTextAlignment="End" BackgroundColor="Transparent"
+                       FontSize="18" TextColor="#555555" 
+                       Margin="25,0,0,5" />
+
+            <Grid Grid.Row="2" Grid.Column="0" Margin="10,0,10,0" ColumnSpacing="0" Padding="0" 
+                  RowSpacing="0" BackgroundColor="#EFF1F5" VerticalOptions="Fill" HorizontalOptions="Fill">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50*" />
+                    <RowDefinition Height="50*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*" />
+                    <ColumnDefinition Width="50*" />
+                </Grid.ColumnDefinitions>
+
+                <!--<Frame  Grid.Row="0" Grid.Column="0"  Margin="0" BackgroundColor="#EFF1F5" VerticalOptions="Fill" HorizontalOptions="Fill"
+                        CornerRadius="15" Padding="0" HasShadow="True" >
+
+                    <ImageButton x:Name="DashMyPolicies"  Source="dash_my_policies.png" Margin="0" CornerRadius="0" 
+                             VerticalOptions="Fill" HorizontalOptions="Fill"  
+                             BackgroundColor="#EFF1F5" Aspect="AspectFit" Clicked="DashMyPolicies_Click"></ImageButton>
+
+                </Frame>-->
+                <Grid Grid.Row="0" Grid.Column="0"  ColumnSpacing="0" Padding="0"
+                  BackgroundColor="#EFF1F5" VerticalOptions="Fill" HorizontalOptions="Fill">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="170" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100*" />
+                    </Grid.ColumnDefinitions>
+
+
+
+
+                    <Frame HeightRequest="45" Margin="25,20,10,20"  CornerRadius="10" BackgroundColor="#EFF1F5"  Padding="10" HasShadow="True" BorderColor="LightGray">
+<StackLayout>
+   
+        <!-- ImageButton -->
+        <ImageButton x:Name="DashMyPolicies" Source="policies.png" Margin="0" CornerRadius="0" 
+                     VerticalOptions="Fill" HorizontalOptions="Start"   
+                     BackgroundColor="Transparent" Aspect="AspectFit" Clicked="DashMyPolicies_Click"/>
+
+        <!-- Text Overlay -->
+        <Label Text="My Policies" FontAttributes="Bold" HorizontalTextAlignment="Start" VerticalTextAlignment="End" TextColor="#555555" FontSize="14" Margin="0,0,0,0">
+        </Label>
+
+        <!-- Second line of text -->
+        <Label Text="Policies that meet our needs" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" TextColor="#555555" FontSize="12" Margin="0,0,0,0">
+        </Label>
+
+        <!-- Third line of text -->
+        <Label Text="meet our needs" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" TextColor="#555555" FontSize="12" Margin="0,0,0,0">
+        </Label>
+ </StackLayout>
+                        
+   
+</Frame>
+                    
+
+
+
+                </Grid>
+
+                <!--<Frame  Grid.Row="0" Grid.Column="1"  Margin="0" BackgroundColor="#EFF1F5" VerticalOptions="Fill" HorizontalOptions="Fill"
+                        CornerRadius="15" Padding="0" HasShadow="True">
+
+                    <ImageButton  Source="dash_your_claims.png" Margin="0" CornerRadius="0" 
+                             VerticalOptions="Fill" HorizontalOptions="Fill"  
+                             BackgroundColor="#EFF1F5" Aspect="AspectFit"></ImageButton>
+
+                </Frame>-->
+                <Grid Grid.Row="0" Grid.Column="1"  ColumnSpacing="0" 
+                BackgroundColor="#EFF1F5" VerticalOptions="Fill" HorizontalOptions="Fill">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="170" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100*" />
+                    </Grid.ColumnDefinitions>
+                    <Image   Source="dash_bt_bg.png"  
+                             VerticalOptions="Fill" HorizontalOptions="Fill" 
+                             BackgroundColor="#EFF1F5" Aspect="AspectFit" Margin="0">
+
+                    </Image>
+
+<Frame Margin="25,20,20,20"  CornerRadius="10" BackgroundColor="#EFF1F5" Padding="10" HasShadow="True" BorderColor="LightGray">
+    <StackLayout VerticalOptions="FillAndExpand">
+        <!-- ImageButton -->
+        <ImageButton Source="claim.png" Margin="0" CornerRadius="0" 
+                     VerticalOptions="Fill" HorizontalOptions="Start"  
+                     BackgroundColor="Transparent" Aspect="AspectFit"/>
+
+        <!-- Text Overlay -->
+        <Label Text="Your Claims" FontAttributes="Bold" HorizontalTextAlignment="Start" VerticalTextAlignment="End" TextColor="#555555" FontSize="14" Margin="0,0,0,0">
+        </Label>
+
+        <!-- Second line of text -->
+        <Label Text="Your claims and details" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" TextColor="#555555" FontSize="12" Margin="0,0,0,0">
+        </Label>
+    </StackLayout>
+</Frame>
+
+
+
+
+
+                </Grid>
+
+
+                
+                <Grid Grid.Row="1" Grid.Column="0"  ColumnSpacing="0" 
+                    BackgroundColor="#EFF1F5" VerticalOptions="Fill" HorizontalOptions="Fill">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="170" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100*" />
+                    </Grid.ColumnDefinitions>
+                    
+                   <Frame Margin="25,20,5,20" CornerRadius="10" BackgroundColor="Transparent" Padding="10" HasShadow="True" BorderColor="LightGray">
+    <StackLayout>
+        <!-- ImageButton -->
+        <ImageButton Source="quote.png" Margin="0" CornerRadius="0" 
+                     VerticalOptions="Fill" HorizontalOptions="Start"  
+                     BackgroundColor="Transparent" Aspect="AspectFit" />
+
+        <!-- Text Overlay -->
+        <Label Text="Get a Quote" FontAttributes="Bold" HorizontalTextAlignment="Start" VerticalTextAlignment="End" TextColor="#555555" FontSize="14" Margin="0,0,0,0">
+        </Label>
+
+        <!-- Second line of text -->
+        <Label Text="Reach out to your executive" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" TextColor="#555555" FontSize="12" Margin="0,0,0,0">
+        </Label>
+    </StackLayout>
+</Frame>
+
+
+                </Grid>
+
+               
+                <Grid Grid.Row="1" Grid.Column="1"  ColumnSpacing="0" 
+                 BackgroundColor="#EFF1F5" VerticalOptions="Fill" HorizontalOptions="Fill">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="170" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100*" />
+                    </Grid.ColumnDefinitions>
+                    
+
+
+
+
+                   <Frame Margin="25,20,20,20" CornerRadius="10" BackgroundColor="#EFF1F5" Padding="10" HasShadow="True" BorderColor="LightGray">
+    <StackLayout>
+        <!-- ImageButton -->
+        <ImageButton Source="mobile.png" Margin="0" CornerRadius="0" 
+                     VerticalOptions="Fill" HorizontalOptions="Start"  
+                     BackgroundColor="Transparent" Aspect="AspectFit" />
+
+        <!-- Text Overlay -->
+        <Label Text="Mobile Pay" FontAttributes="Bold" HorizontalTextAlignment="Start" VerticalTextAlignment="End" TextColor="#555555" FontSize="14" Margin="0,0,0,0">
+        </Label>
+
+        <!-- Second line of text -->
+        <Label Text="Stay healthy, live long!" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" TextColor="#555555" FontSize="12" Margin="0,0,0,0">
+        </Label>
+    </StackLayout>
+</Frame>
+
+
+                </Grid>
+            </Grid>
+<Grid Grid.Row="3" Grid.Column="0" Margin="0,0,0,0" Padding="10"
+      ColumnSpacing="25" BackgroundColor="#EFF1F5" VerticalOptions="Fill" HorizontalOptions="Fill">
+    <Grid.RowDefinitions>
+        <RowDefinition Height="60" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="350" />
+       
+    </Grid.ColumnDefinitions>
+
+    <!-- Frame with ImageButton and Label -->
+    <Frame Grid.Row="0" Grid.Column="0"  Margin="15,10,0,0" CornerRadius="10" BackgroundColor="Transparent" Padding="0" HasShadow="True" BorderColor="LightGray">
+        <StackLayout Orientation="Horizontal">
+            <!-- ImageButton -->
+            <ImageButton Source="hands.png" Margin="10,0,0,0" CornerRadius="0" 
+                         VerticalOptions="Center" HorizontalOptions="Start"  
+                         BackgroundColor="Transparent" Aspect="AspectFit" />
+
+            <!-- Text Overlay -->
+            <Label Text="Get assistance from experts" FontAttributes="Bold" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" TextColor="#555555" FontSize="18" Margin="0,0,0,0">
+            </Label>
+        </StackLayout>
+    </Frame>
+</Grid>
+
+
+
+            <Grid Grid.Row="4" Grid.Column="0" Margin="15,0,0,0" 
+                  ColumnSpacing="15" BackgroundColor="Transparent" VerticalOptions="Fill" HorizontalOptions="Fill">
+                <Grid.RowDefinitions>
+<RowDefinition Height="60" />
+
+ 
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="15*" />
+                    <ColumnDefinition Width="15*" />
+                    <ColumnDefinition Width="30*" />
+                </Grid.ColumnDefinitions>
+
+
+ 
+<Frame Grid.Row="0" Grid.Column="0" CornerRadius="10" BackgroundColor="Transparent" Padding="1" HasShadow="True" BorderColor="LightGray">
+    <StackLayout >
+
+                <ImageButton Grid.Row="0" Grid.Column="0" CornerRadius="5" Source="phone.png" 
+                             VerticalOptions="Fill" HorizontalOptions="Fill" Margin="0,0,0,0" BackgroundColor="#EFF1F5" 
+                             Aspect="AspectFit" />
+ <Label Text="Support" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="End" TextColor="#555555" FontSize="14" Margin="0,0,5,0">
+ </Label>
+ </StackLayout>
+</Frame>
+
+
+
+
+
+<Frame Grid.Row="0" Grid.Column="1" CornerRadius="10" BackgroundColor="Transparent" Padding="1" HasShadow="True" BorderColor="LightGray">
+    <StackLayout >
+        <ImageButton Grid.Row="1" Grid.Column="1" CornerRadius="5" Source="document.png" 
+                     VerticalOptions="Fill" HorizontalOptions="Fill" Margin="0,0,0,0" BackgroundColor="#EFF1F5" 
+                     Aspect="AspectFit" />
+        <Label Text="Document" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="End" TextColor="#555555" FontSize="14" Margin="0,0,0,0" >
+            </Label>
+    </StackLayout>
+</Frame>
+
+
+
+
+
+
+
+
+
+<Frame Grid.Row="0" Grid.Column="2" CornerRadius="10" BackgroundColor="Transparent" Padding="3" HasShadow="True" BorderColor="LightGray">
+    <StackLayout Orientation="Horizontal">
+
+                <ImageButton Grid.Row="0" Grid.Column="2" CornerRadius="5" Source="product.png" 
+                             VerticalOptions="Fill" HorizontalOptions="Center" Margin="0,0,0,0" BackgroundColor="#EFF1F5"  
+                             Aspect="AspectFit" />
+           
+
+        <Label Text="product" FontAttributes="Bold" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" TextColor="#555555" FontSize="17" Margin="0,0,0,0">
+        </Label>
+    </StackLayout>
+</Frame>
+
+
+
+
+ </Grid>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </Grid>
+
+
+
+
+    </StackLayout>
+           
+</ContentPage>
